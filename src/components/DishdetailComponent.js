@@ -6,9 +6,9 @@ import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 're
 
    function RenderComments({comments})
     {
-        if(comments != null)
-        {  
-                return(
+        if(comments != null) 
+            return(
+
                     <div className="col-12 col-md-5 m-1">
                         <h4> Comments</h4>
                     
@@ -19,13 +19,13 @@ import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 're
                                  <p className="comment"> {com.comment}</p>
                                 <p className="author">--{com.author}, {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(com.date)))}</p>
                                </li>
-                                  );
-                              })}
+                               );   
+                             })}
                         </ul>
                     </div>
+            );
 
-                );
-        }
+      
                 
         
         else
